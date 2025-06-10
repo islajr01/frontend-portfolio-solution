@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.testimonial-section {
+  max-width: 1200px; 
+  margin: auto;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.testimonial-card.light {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.testimonial-card.image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.author img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.author h4 {
+  margin: 0;
+}
+
+.author p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.testimonial-card.stars .stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-card.stars h3 {
+  margin: 0;
+}
+
+.testimonial-card.stars .title {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Carousel Section */
+.testimonial-carousel {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-carousel .quote {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.carousel-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
