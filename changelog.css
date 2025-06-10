@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.changelog-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px; /* Space for the line and dots */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc; /* Timeline line color */
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #333; /* Dot color */
+    border-radius: 50%;
+    position: absolute;
+    left: -6px; /* Adjust to center on the line */
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #999;
+    margin-right: 20px;
+    min-width: 120px; /* Ensure consistent spacing */
+    text-align: right;
+}
+
+.timeline-content {
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555;
+}
