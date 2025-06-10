@@ -1,3 +1,3 @@
 # frontend-portfolio-solution
 
-https://roadmap.sh/projects/portfolio-website
+https://roadmap.sh/projects/single-page-cv
