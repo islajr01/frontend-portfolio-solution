@@ -1,0 +1,52 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: unset;
+    font-size: xx-large;
+    background-color: rgba(96, 218, 65, 0.779);
+    display: flex;
+    margin: auto;
+}
+calendar-container{
+    border: 1px solid black;
+    width: 300px; /* Adjust as needed */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom :10px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+}   
+.date-format {
+    font-size: 0.9em;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.weekdays span {
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+}
+
+.days span {
+    padding: 10px 0;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.empty-day {
+    visibility: hidden; /* Hides empty cells at the start of the month */
+}
