@@ -1,0 +1,87 @@
+  body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 30px;
+        }
+        .form-section, .progress-section {
+            flex: 1;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: calc(100% - 12px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            border-color: #5cb85c;
+            outline: none;
+        }
+        .form-group .error {
+            color: red;
+            font-size: 0.8em;
+        }
+        .progress-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .progress-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .progress-circle span {
+            font-size: 1.5em;
+        }
+        .progress-list {
+            list-style: none;
+            padding: 0;
+        }
+        .progress-list li {
+            padding: 5px;
+            color: #888;
+        }
+        .progress-list li.completed {
+            color: #5cb85c;
+            text-decoration: line-through;
+        }
+        .update-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .update-button:hover {
+            background-color: #333;
+        }
