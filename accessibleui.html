@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Update</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            display: flex;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        input[type="email"].error {
+            border-color: red;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+        }
+        .progress-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .progress-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 4px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            position: relative;
+        }
+        .progress-circle::before {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid #000;
+            border-right-color: transparent;
+            transform: rotate(-90deg);
+            clip-path: polygon(50% 50%, 100% 0, 100% 100%, 50% 100%);
+        }
+        .progress-circle span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .progress-text {
+            font-weight: bold;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .checklist li {
+            margin-bottom: 5px;
+            color: #888;
+        }
+        .checklist li:before {
+            content: "• ";
+            color: #888;
+        }
+        button {
+            background-color: #000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        .password-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .password-container input {
+            width: calc(100% - 22px);
+            padding-right: 30px;
+        }
+        .password-toggle {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="What should we call you?">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" value="john@doe.com" class="error">
+                <div class="error-message">Email is already taken</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" value="XXXXXXXX">
+                    <span class="password-toggle">  /span>  </span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                 <div class="password-container">
+                    <input type="password" id="confirm-password" value="XXXXXXXX">
+                    <span class="password-toggle">👁️</span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-circle">
+                    <span>65%</span>
+                </div>
+                <div class="progress-text">Profile Completeness</div>
+            </div>
+            <ul class="checklist">
+                <li>Create Account</li>
+                <li>Update Roadmap Progress</li>
+                <li>Setup Public Profile</li>
+                <li>Complete your first project</li>
+                <li>Invite your Friends</li>
+            </ul>
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+</body>
+</html>
