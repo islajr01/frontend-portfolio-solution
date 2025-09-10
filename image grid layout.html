@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--style (basic, inline, for simplicity)-->
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 15px;
+}
+
+.item {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="row">
+    <div class="cloumn">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152138.png">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152219.png">
+    </div>
+     <div class="cloumn">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152153.png">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152202.png">
+    
+    </div>
+     <div class="cloumn">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152211.png">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152226.png">
+    </div>
+    <div class="cloumn">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152138.png">
+        <img src="C:\Users\User\Pictures\Screenshots\Screenshot 2025-06-19 152219.png">
+    </div>
+</div>
+</body>
+</html>

@@ -1,17 +1,21 @@
+background{
+    color: yellowgreen;
+}
 body{
+    background-image: url("C:\Users\User\Documents\se-workspace\bsckgroung image\images.jpg");
     font-family: 'Times New Roman', Times, serif;
     font-style: unset;
     font-size: xx-large;
-    background-color: rgba(96, 218, 65, 0.779);
     display: flex;
     margin: auto;
 }
 calendar-container{
     border: 1px solid black;
-    width: 300px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 10px;
+
 }
 .header-top {
     display: flex;

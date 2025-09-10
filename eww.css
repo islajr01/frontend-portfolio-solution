@@ -1,17 +1,21 @@
-  body {
+        body{
+            background-color:gra;
+        }
+        body {
             font-family: sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color:yellow
+            background-color: black;
+           
         }
         .container {
-            background-color: white;
+            background-color:rgb(90, 11, 20);
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display:flex;
+            display: flex;
             gap: 30px;
         }
         .form-section, .progress-section {
